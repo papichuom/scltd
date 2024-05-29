@@ -37,7 +37,7 @@ const MobileNav = ({nav,closeNav}:Props) => {
               >Services</Link>
             </li>
             <li className="text-[17px] cursor-pointer hover:text-red-500 transition-all duration-200">
-              <Link href="/projects"
+              <Link href="/pjects"
               className={buttonVariants({
                 variant: 'outline',
                 size: 'sm',
