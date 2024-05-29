@@ -1,5 +1,6 @@
 'use client'
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { SheetDemo } from "@/components/sheet/Sheet";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Calendar } from "@/components/ui/calendar";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,8 +13,7 @@ export default function Home() {
   return (
     <div className="">
       <MaxWidthWrapper >
-      <section>
-        <div className="pb-2 pt-5 lg:grid lg:grid-cols-3 sm:pb-12 lg:gap-x-0 xl:gap-x-8 lg:pt-14 xl:pt-22 lg:pb-32">
+        <div className="pb-2 pt-5 lg:grid lg:grid-cols-3 sm:pb-12 lg:gap-x-0 xl:gap-x-3 lg:pt-14 xl:pt-22 lg:pb-32">
         <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
           <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
           <div className=" my-1 ml-2 mb-4 max-w-fit items-start  space-x-2 overflow-hidden rounded-full border border-zinc-400 bg-black px-4 py-2 shadow-md backdrop-blur transition-all hover:border-green-300 hover:bg-green/50">
@@ -37,8 +37,8 @@ export default function Home() {
 </Card>
              <div className="mt-6 flex flex-col sm:flex-row items-center sm:items-start gap-5">
                 <div className="flex -space-x-4">
-                  <Image src='/mombasa cement.png' alt="user image" width={40} height={40} className="inline-block rounded-full ring-2 ring-transparent"/>
                   <Image src='/kmfri.png' alt="user image" width={40} height={40} className="inline-block rounded-full ring-2 ring-transparent"/>
+                  <Image src='/mombasa cement.png' alt="user image" width={40} height={40} className="inline-block rounded-full ring-2 ring-transparent"/>
                   <Image src='/toyo (1).png' alt="user image" width={40} height={40} className="inline-block rounded-full ring-2 ring-transparent"/>
                   <Image src='/csl.png' alt="user image" width={40} height={40} className="inline-block rounded-full ring-2 ring-transparent"/>
                   <Image src='/kpa.png' alt="user image" width={40} height={40} className="inline-block object-cover rounded-full ring-2 ring-transparent"/>
@@ -53,12 +53,14 @@ export default function Home() {
                     </div>
                     <p className="text-white">
                       <span className="font-semibold text-orange-600">400+</span> Happy Clients
-                    </p>
+                    </p> 
                 </div>
+                <SheetDemo/>
              </div>
           </div>
           </div>
           <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
+            <div>
         <Accordion type="single" collapsible className="w-[400px] mt-[30px] text-white rounded-lg text-center ">FAQs
       <AccordionItem value="item-1">
         <AccordionTrigger>Do you offer opportunities for student attachment or internships?</AccordionTrigger>
@@ -79,7 +81,8 @@ export default function Home() {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-    <div className="grid grid-cols-1 mt-6 ">
+    </div>
+    <div className="items-center mt-3">
     
     <Card className="w-[400px]">
       <Image  src="/cons.png" width={400} height={100} alt="card" className="rounded-lg"/>
@@ -88,7 +91,7 @@ export default function Home() {
        
     </div>
     </div>
-    </section>
+   
         </MaxWidthWrapper>
       
 

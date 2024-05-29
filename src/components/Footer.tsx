@@ -16,12 +16,7 @@ const Footer = () => {
           </div>
           <div className='flex items-center justify-center'>
             <div className='flex space-x-8'>
-              <Link href='#' className='text-sm text-muted-foreground hover:text-gray-600'>
-                <Image src='/whatsapp-color-icon.svg' alt='WhatsApp' width={16} height={16} />
-              </Link>
-              <Link href='#' className='text-sm text-muted-foreground hover:text-gray-600'>
-                <Image src='/linkedin.svg' alt='LinkedIn' width={16} height={16} />
-              </Link>
+            
               <Link href='#' className='text-sm text-muted-foreground hover:text-gray-600'>
                 <Image src='/x-social-media-black-icon.svg' alt='X' width={16} height={16} />
               </Link>
