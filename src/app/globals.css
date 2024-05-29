@@ -80,3 +80,361 @@
     min-height: 100vh;
     background-image: url(/banner1.png);
   }
+  .skills--section{
+    display: flex;
+    padding: 5.33px 80.33px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    height: 80vh;
+    background-color: var(--bg-shade);
+    padding-left: 2%;
+    padding-right: 2%;
+   
+    padding-top: 0%;
+  
+  }
+  .skills--section--heading{
+    color: #cecaca;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+  .skills--section--container{
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10.6px;
+    grid-template-columns: repeat(5,1fr);
+  }
+  .skills--section--card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10.6px;
+    background:#8ec1f1;
+    
+    padding-top: 0%;
+  }
+  .skills--section--card:hover{
+    border-bottom:4px solid var(--primary) ;
+  }
+  .skills--section--card:hover .skills--description{
+    border-bottom:4px solid var(--darkblue) ;
+  }
+  .skills--section--img{
+    display: contents;
+    padding: 3.3px;
+    justify-content: center;
+    align-items: center;
+    gap: 3.3px;
+    border-radius: 10.6px;
+    background:#01928b;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  .skills--section--img >img{
+    width: 100%;
+    border-radius: 10.6px;
+  }
+  .skills--section--card--content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+  
+  }
+  .skills--section--title{
+    color: var(--heading-color);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0px;
+  
+  }
+  .skills--section--description{
+  color: var(--black); 
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  justify-content: center;
+  
+  }
+  /* CareerSection.css */
+  .career-section-overlay {
+    position: relative;
+    padding-top: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding for content */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow */
+  }
+  
+  .career-section-content {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    color: white;
+    border-radius: 10px; /* Rounded corners */
+    overflow: auto; /* Enable scrolling if content exceeds window size */
+    padding: 20px; /* Add padding for content */
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    padding-left: 5%;
+  }
+  
+  .career-section__slider {
+    flex: 1; /* Take remaining space */
+    
+  }
+  
+  .career-section__button {
+    align-self: flex-end; /* Align button to the end of the flex container (bottom) */
+    margin-top: 2px; /* Add space between slider and button */
+    right: 20px;
+    background-color: #f3f4f7;
+    color: black;
+    border-radius: 5px;
+    border: #8abdff;
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+    .career-section__button {
+      position: absolute;
+      bottom: 20px;
+      right: 90px;
+      font-weight: 800;
+    }
+  }
+  
+  
+  /* Add any additional styling as needed */
+  .service-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto; /* Enable scrolling inside content */
+    border-radius: 8px;
+  }
+  
+  .button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+  }
+  @media screen and (max-width: 768px) {
+    .content {
+      max-width: 90%; /* Adjust maximum width for smaller screens */
+      margin-top: 10%;
+    }
+    .content h2{
+      font-size:20px ;
+      font-style: italic;
+      text-decoration: underline;
+    }
+  }
+  .tab--container {
+    display: flex;
+    gap: 120px; /* Add space between the buttons */
+    margin: 20px; /* Add spacing around the tab container */
+  }
+  
+  .tab {
+    padding: 10px 50px;
+    background-color: #8abdff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 700;
+  
+  }
+  
+  .tab.active {
+    background-color: #00bd10;
+  }
+  
+  @media screen and (max-width: 720px) {
+    .tab--container {
+      display: flex;
+      margin: 2px;
+      gap: 2px;
+      
+      
+    }
+    
+    .tab {
+      margin-bottom: 10px; /* Add space between stacked buttons */
+      padding: 10px 30px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 1600px) {
+    .skills--section--heading {
+      font-size: 54px;
+      line-height: 70px;
+    }
+    .skills--section--container {
+      gap: 16px;
+    }
+    .skills--section--card {
+      gap: 23px;
+    }
+    .skills--section--card--content {
+      gap: 20px;
+    }
+    .skills--section--title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .skills--section--description {
+      font-size: 17.333px;
+      line-height: 27px;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+   
+    
+     .skills--section--container{
+     
+      display: flex;
+      flex-direction: column;
+      padding-left: 2%;
+      padding-right: 2%;
+     }
+     
+     .about--section,
+     .portfolio--section--container,
+     .portfolio--container-box,
+     .footer--link--container,
+     .footer--items > ul,
+     .footer--content--container {
+       display: flex;
+       flex-direction: column;
+     }
+   
+     .hero--section--content,
+     .hero--section--content--box {
+       align-items: center;
+       margin: auto;
+       padding-left: 0%;
+     }
+     .hero--section--img {
+       display: flex;
+       border-radius: 10px;
+       margin-top: 0px }
+       .hero--section--img >img {
+         display: none;
+       }
+     .skills--section--img{
+       width: 100%;
+     }
+     .portfolio--container-box {
+       gap: 5px;
+       margin: 1px;
+       padding-top: 2%;
+     }
+     .skills--section{
+       display: flex;
+       flex-direction: column; 
+       padding-left: 0%;
+       height: 100%;
+     }
+     .portfolio--container{
+       margin: 1px;
+     }
+     .client--section{
+       padding-top: 200%;
+       display: flex;
+       flex-direction: column;
+     }
+     .client--section--heading{
+       padding-left: 20%;
+       text-decoration: underline;
+     }
+     
+     .testimonial--section,
+     .contact--section,
+     .footer--container {
+       gap: 20px;
+       padding-top: 70px;
+       padding-bottom: 70px;
+       padding-left: 2%;
+       padding-right: 2%;
+     }
+     .about--section {
+       gap: 20px;
+       padding-top: 20px;
+       padding-bottom: 120px;
+       padding-left: 2%;
+       padding-right: 2%;
+       height: 100vh;
+     }
+     
+     
+     .section--heading {
+       font-size: 30px;
+       
+       padding-bottom: 1%;}
+   
+    
+     .hero--section--title,
+     .skills--section--heading,
+     .sections--heading {
+       font-size: 35px;
+       line-height: 40px;
+     }
+     
+       
+       
+     
+   }
+  
+   @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Switch to single column layout */
+    }
+  }
